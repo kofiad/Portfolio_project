@@ -1,5 +1,6 @@
-
+const Income = require('../models/income');
 
 exports.addIncome = async (req, res) => {
-    console.log(req.body);
+    const {title, amount, category, description, date} = req.body;
+    const income = income
 };
