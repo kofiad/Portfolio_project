@@ -18,10 +18,8 @@ exports.addIncome = async (req, res) => {
         if (!amount === 'number' || amount <= 0){
             return res.status(400).json({error: "Amount is required"})
         }
-        else {
-            await income.save();
-            res.status(200).json({message: "Income added successfully"})
-        }
+        await income.save();
+        res.status(200).json({message: "Income added successfully"})
     } catch(error){
 
     }
