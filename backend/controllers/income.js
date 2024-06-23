@@ -15,7 +15,7 @@ exports.addIncome = async (req, res) => {
         if (!title || !category || !description || !date) {
             return res.status(400).json({ error: 'All fields are required' });
         }
-        if (amount <= 0 || typeof amount !== 'number') {
+        if (amount <= 0 || !amount === 'number') {
             return res.status(400).json({ error: 'Amount must be a positive number' });
         }
         // For some reason, the input is not being saved
