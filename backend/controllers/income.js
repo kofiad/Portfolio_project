@@ -18,11 +18,11 @@ exports.addIncome = async (req, res) => {
         if (!amount === 'number' || amount <= 0) {
             return res.status(400).json({ error: 'Amount is required' });
         }
-        // For some reason this part of the code is not working
+        // For some reason, I am recieving a server error when I try to save the income
         await income.save();
         res.status(200).json({ message: 'Income added successfully' });
     } catch (error) {
-        res.status(500).json({ message: 'Server Error' });
+        //res.status(500).json({ message: 'Server Error' });
     }
     console.log(income);
 };
