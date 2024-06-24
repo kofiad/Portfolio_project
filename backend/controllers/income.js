@@ -28,7 +28,7 @@ exports.addIncome = async (req, res) => {
     console.log(income);
 };
 
-exports.getIncomes = async (req, res) => {
+exports.getIncome = async (req, res) => {
     try {
         const incomes = await IncomeSchema.find().sort({ createdAt: -1 });
         res.status(200).json(incomes);
