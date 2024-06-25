@@ -20,9 +20,8 @@ export const GlobalStyle = createGlobalStyle`
 
     body{
         font-family: "Lexend Deca", sans-serif;
-        background-color: var(--primary-colour);
-        font-optical-sizing: auto;
-        font-weight: <weight>;
-        font-style: normal;
+        font-size: clamp(1rem, 1.5vw, 1.2rem);
+        overflow: hidden;
+        clour: rgba(34, 34, 96, 0.6);
     }
 `;
