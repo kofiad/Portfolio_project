@@ -9,10 +9,12 @@ function App() {
 }
 
 const AppStyled = styled.main`
-  height: 100vh;
+  min-height: 100vh; // Ensures the element covers the full height of the viewport
+  width: 100%; // Ensures the element covers the full width of the viewport
   background-image: url(${({ backgroundImage }) => backgroundImage});
   background-size: cover; // Ensures the background covers the entire div
   background-position: center; // Centers the background image
+  background-repeat: no-repeat; // Prevents the image from repeating
 `;
 
 export default App;
