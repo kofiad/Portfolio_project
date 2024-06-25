@@ -17,6 +17,8 @@ const AppStyled = styled.main`
   background-image: url(${({ backgroundImage }) => backgroundImage});
   position: relative; // Positions background image relative to the device screen
   background-repeat: no-repeat; // Prevents the image from repeating
+  background-size: cover; // Covers the entire area without stretching the image
+  background-position: center; // Centers the background image
 `;
 
 export default App;
