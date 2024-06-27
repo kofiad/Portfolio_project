@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from "styled-components";
 import bg from './img/bg.jpeg';
 import { MainLayout } from "./styles/layout";
