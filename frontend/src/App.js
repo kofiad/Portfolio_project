@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from "styled-components";
 import bg from './img/bg.jpeg';
 import { MainLayout } from "./styles/layout";
@@ -6,7 +7,7 @@ function App() {
   return (
     <AppStyled backgroundImage={bg} className="App" role="main">
       <MainLayout>
-        <h1>App</h1>
+        <h1>Expense App</h1>
       </MainLayout>
     </AppStyled>
   );
