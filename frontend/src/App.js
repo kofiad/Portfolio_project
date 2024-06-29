@@ -7,7 +7,7 @@ function App() {
   return (
     <AppStyled backgroundImage={bg} className="App" role="main">
       <MainLayout>
-        <h1>App Expense</h1>
+        <h1>Expense App</h1>
       </MainLayout>
     </AppStyled>
   );
