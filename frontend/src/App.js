@@ -2,12 +2,14 @@ import React from 'react';
 import styled from "styled-components";
 import bg from './img/bg.jpeg';
 import { MainLayout } from "./styles/layout";
+import Orb from './components/orb/Orb';
 
 function App() {
   return (
     <AppStyled backgroundImage={bg} className="App" role="main">
+      <Orb />
       <MainLayout>
-        <h1>Expense App</h1>
+        <h1>PennyWise</h1>
       </MainLayout>
     </AppStyled>
   );
