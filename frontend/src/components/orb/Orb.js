@@ -12,7 +12,7 @@ function Orb() {
         transform: translate(0, 0);
       }
       50%{
-        transform: translate(400px, 500px);
+        transform: translate(${useWindowSize.width}, ${height});
       }
       100%{
         transform: translate(0, 0);
