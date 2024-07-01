@@ -15,7 +15,7 @@ function App() {
   );
 }
 
-const AppStyled = styled.main`
+const AppStyled = styled.div`
   height: 100vh; // Sets the height of the div to the height of the device screen
   background-image: url(${({ backgroundImage }) => backgroundImage});
   position: relative; // Positions background image relative to the device screen
