@@ -7,6 +7,15 @@ function navigation() {
     <NavStyled>
         <div className='user-con'>
             <img src={avatar} alt='' />
+            <div className='text'>
+                <h2>User</h2>
+                <p>Your Money</p>
+            </div>
+        </div>
+        <div>
+        <ul className='menu-items'>
+
+        </ul>
         </div>
     </NavStyled>
   )
